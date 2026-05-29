@@ -1,0 +1,18 @@
+{
+  "name": "FORGE",
+  "short_name": "FORGE",
+  "description": "Behavioral continuity system. Built for Keth.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050403",
+  "theme_color": "#050403",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

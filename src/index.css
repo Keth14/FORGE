@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #050403;
+  color: #e7e5e4;
+  font-family: 'DM Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1917;
+  border-radius: 99px;
+}
+
+button {
+  font-family: 'DM Mono', monospace;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+input, textarea {
+  font-family: 'DM Mono', monospace;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes expandLine {
+  from { width: 0; }
+  to   { width: 160px; }
+}
+
+@keyframes fadeInSub {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  0%   { opacity: 1; transform: translateY(0); }
+  60%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-30px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(3px); }
+}
+
+@keyframes eyePulse {
+  0%, 100% { opacity: 0.8; }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes fragmentDrift {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1); }
+}
